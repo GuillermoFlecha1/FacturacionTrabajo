@@ -1,0 +1,24 @@
+impuesto.add_form:
+  path: '/impuesto/add'
+  defaults:
+    _entity_form: 'impuesto.add'
+    _title: 'Añadir Impuesto'
+  requirements:
+    _permission: 'add impuesto entities'
+
+impuesto.edit_form:
+  path: 'impuesto/{impuesto}/edit'
+  defaults:
+    _entity_form: 'impuesto.edit'
+    _title: 'Editar Impuesto'
+  requirements:
+    _entity_access: 'impuesto.update'
+
+impuesto.delete_form:
+  path: 'impuesto/{impuesto}/delete'
+  defaults:
+    _entity_form: 'impuesto.delete'
+    _title: 'Eliminar Impuesto'
+  requirements:
+    _entity_access: 'impuesto.delete'
+
